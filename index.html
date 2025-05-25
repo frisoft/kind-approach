@@ -48,18 +48,25 @@
                 Launching Summer 2025
             </div>
             
-            <!--
-            <form class="flex flex-col md:flex-row justify-center gap-4 mb-6">
-                <input type="email" placeholder="Your email address" class="px-6 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 font-raleway flex-grow max-w-sm" required>
-                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-raleway font-medium px-6 py-3 rounded-lg transition-all duration-300">
-                    Notify Me
+            <!-- Button to show the form -->
+            <div id="updateButtonContainer" class="mt-8 mb-8">
+                <button id="stayUpdatedBtn" class="bg-green-600 hover:bg-green-700 text-white font-raleway font-medium px-8 py-3 rounded-lg transition-all duration-300 text-lg">
+                    Stay Updated
                 </button>
-            </form>
-            
-            <div class="text-sm text-gray-500 font-raleway">
-                Be the first to know when we launch. No spam, just kindness.
             </div>
-            -->
+            
+            <!-- Hidden iframe -->
+            <div id="formContainer" class="flex justify-center w-full hidden">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfV-bD0Lr4ZPAgTtUQsPsY9d2fSB6cLMwo23MldzONV3EeT3g/viewform?embedded=true&amp;text-align=center" 
+                    width="440" 
+                    height="540"
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    style="margin: 0 auto; display: block; width: 100%; max-width: 440px;"
+                    class="mx-auto">Loading…</iframe>
+            </div> 
         </div>
        
         <!--
@@ -81,5 +88,21 @@
     <footer class="mt-16 text-center text-gray-500 font-raleway text-sm">
         <p>&copy; 2025 Kind Approach. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const stayUpdatedBtn = document.getElementById('stayUpdatedBtn');
+            const updateButtonContainer = document.getElementById('updateButtonContainer');
+            const formContainer = document.getElementById('formContainer');
+            
+            stayUpdatedBtn.addEventListener('click', function() {
+                // Hide the button
+                updateButtonContainer.classList.add('hidden');
+                
+                // Show the form
+                formContainer.classList.remove('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
