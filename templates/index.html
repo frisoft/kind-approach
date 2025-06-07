@@ -2,63 +2,6 @@
 
 {% block title %}Kind Approach - Holistic Health Coaching{% endblock title %}
 
-{% block extra_head %}
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    primary: {
-                        50: '#f8f8f8',
-                        100: '#f0f0f0',
-                        200: '#e4e4e4',
-                        300: '#d1d1d1',
-                        400: '#b4b4b4',
-                        500: '#9a9a9a',
-                        600: '#666666',
-                        700: '#4d4d4d',
-                        800: '#404040',
-                        900: '#333333',
-                        950: '#1a1a1a',
-                    },
-                    secondary: {
-                        50: '#fff9f7',
-                        100: '#fff4f0',
-                        200: '#ffe9e2',
-                        300: '#ffd9c0',
-                        400: '#f6b4a4',
-                        500: '#f5e9e4',
-                        600: '#e5d9d4',
-                        700: '#d5c9c4',
-                        800: '#c5b9b4',
-                        900: '#b5a9a4',
-                        950: '#958983',
-                    },
-                    tertiary: {
-                        400: '#b8cec9',
-                    }
-                },
-                fontFamily: {
-                    'sans': ['Quicksand', 'sans-serif'],
-                    'serif': ['Lora', 'serif'],
-                },
-            }
-        }
-    }
-</script>
-<style>
-    .bg-blur {
-        backdrop-filter: blur(8px);
-    }
-    .custom-shape {
-        clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
-    }
-    .text-balance {
-        text-wrap: balance;
-    }
-</style>
-{% endblock extra_head %}
-
 {% block content %}
 <!-- {{ section.content | safe }} -->
 
