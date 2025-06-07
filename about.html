@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Kind Approach</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .font-heading {
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 0.03em;
+        }
+        .font-body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .bg-gradient {
+            background: linear-gradient(135deg, #b1d8c3 0%, #e8f5e9 100%);
+        }
+        .text-shadow {
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #5e8b7e 0%, #66a182 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #4e7b6e 0%, #569172 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(94, 139, 126, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col text-gray-800">
+    <!-- Header section with gradient background -->
+    <header class="bg-gradient w-full py-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-heading text-5xl md:text-7xl font-bold mb-6 text-green-800 text-shadow">
+                Kind Approach
+            </h1>
+            
+            <div class="w-24 h-1 bg-green-500 mx-auto mb-8 rounded-full opacity-80"></div>
+            
+            <h2 class="font-body text-2xl md:text-3xl font-light mb-4 text-gray-700">
+                Discover Your Path to Well-being with Kind-Approach Health Coaching
+            </h2>
+            
+            <nav class="mt-10">
+                <ul class="flex justify-center space-x-16">
+                    <li><a href="index.html" class="font-body font-medium text-lg text-green-800 hover:text-green-600 transition-colors duration-300 hover:border-b-2 hover:border-green-500 pb-1">Home</a></li>
+                    <li><a href="about.html" class="font-body font-medium text-lg text-green-800 hover:text-green-600 transition-colors duration-300 border-b-2 border-green-500 pb-1">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main content with white background -->
+    <main class="bg-white w-full flex-grow py-12 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="max-w-3xl mx-auto mb-12">
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-green-800 mb-10 text-center">
+                    About Me
+                </h3>
+                
+                <div class="font-body text-lg text-gray-700 space-y-6 leading-relaxed">
+                    <p>
+                        This page will contain information about the health coach behind Kind Approach.
+                    </p>
+                    <p>
+                        More content coming soon as we prepare for our launch in Summer 2025.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="mt-16 text-center text-gray-500 font-body text-sm py-6">
+        <p>&copy; 2025 Kind Approach. All rights reserved.</p>
+    </footer>
+</body>
+</html>

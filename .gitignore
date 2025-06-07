@@ -1,0 +1,19 @@
+# Zola build directory is kept (docs/) for GitHub Pages
+# public/
+
+# Nix
+.direnv/
+flake.lock
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+.direnv
