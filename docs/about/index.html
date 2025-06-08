@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <title>About - Kind Approach</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@
         }
     </style>
     
-    {% block extra_head %}{% endblock extra_head %}
+    
 </head>
 <body class="font-sans text-gray-800 antialiased">
     <!-- Navigation -->
@@ -92,7 +92,45 @@
         </div>
     </nav>
 
-    {% block content %}{% endblock content %}
+    
+<!-- About Page Main Content -->
+<section class="pt-24 pb-20 lg:pt-32 lg:pb-32 bg-tertiary-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="font-sans text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            About
+        </h1>
+        
+        <div class="relative">
+            <div class="float-right ml-8 mb-8 w-full max-w-md">
+                <div class="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Agnese Guadagnini - Health Coach" class="w-full h-full object-cover" />
+                </div>
+            </div>
+            
+            <div class="prose prose-lg text-gray-600 max-w-none">
+                <p class="mb-6">
+                    I'm Agnese Guadagnini, and I'm the founder of Kind-Approach. My path to becoming a Health Coach has been shaped by over two decades of dedicated work in education, coupled with a deep personal commitment to health and well-being.
+                </p>
+                <p class="mb-6">
+                    My professional journey began in Italy as a teacher, and since moving to the UK, I've had the privilege of working extensively within schools in various impactful roles, including Teaching Assistant (1:1), Learning Support Assistant (LSA), Higher Level Teaching Assistant (HLTA), and Primary School Teacher. This 20-year career has given me profound insights into the daily lives of children and families, cultivating extensive knowledge of Special Educational Needs and Disabilities (SEND) and a wide range of learning and developmental difficulties. Working closely with countless children, parents, and educators over these years has taught me the unique challenges families face and the immense importance of holistic support.
+                </p>
+                <p class="mb-6">
+                    My interest in nutrition became a passionate pursuit during my pregnancy, truly understanding the profound impact that what we eat has on our body and future health. This fascination deepened significantly through my studies at CNM College. It was there I realised how powerful even simple nutritional choices can be in making a significant difference to our well-being. This journey, initially sparked by my sister-in-law opening my eyes to the importance of nutrition in pregnancy, led me to discover how fascinating our body is and the remarkable power we each hold to transform our own lives through informed choices and sustainable habits.
+                </p>
+                <p class="mb-6">
+                    At Kind-Approach, I bring together my extensive educational background, my health journey, and my coaching expertise to offer a compassionate, practical, and truly understanding approach to health. I believe in meeting you exactly where you are, without judgment, and empowering you to discover your unique path to a healthier, happier life.
+                </p>
+                <p class="mb-6">
+                    While my current coaching focuses on holistic individual well-being, I am deeply passionate about the foundation of health laid in childhood. I am actively pursuing further qualifications in children's nutrition and family well-being, with a vision to expand the Kind-Approach to support the health of entire families in the near future.
+                </p>
+                <p>
+                    I'm here to guide, support, and inspire you to unlock your full potential for well-being, one kind step at a time.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-16 pb-12">
